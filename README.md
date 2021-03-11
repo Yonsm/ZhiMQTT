@@ -1,11 +1,11 @@
-# ZhiMqtt
+# ZhiMQTT
 
 Generic MQTT Component for HomeAssistant
 
 基于 MQTT Swicth 的扩展开关，支持以下功能：
 
-- 支持 icon_template 配置，可以使用 Jinja 脚本运算出不同的图标。
-- 支持 original_state 属性。
+- 支持 `icon_template` 配置，可以使用 Jinja 脚本运算出不同的图标。
+- 支持 `original_state` 属性，以便在配置 `value_template` 时能获取原始状态。
 
 ## 1. 安装准备
 
