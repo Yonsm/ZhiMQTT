@@ -1,11 +1,11 @@
-# ZhiMQTT
+# ZhiMqtt
 
 Generic MQTT Component for HomeAssistant
 
 基于 MQTT Swicth 的扩展开关，支持以下功能：
 
-- 支持 icon_template 配置，可以使用 Jinja 脚本运算出不同的图标（参考我的 configuration.yaml 中的 mqtt2 Speaker）；
-- 还支持 original_state 属性。
+- 支持 icon_template 配置，可以使用 Jinja 脚本运算出不同的图标。
+- 支持 original_state 属性。
 
 ## 1. 安装准备
 
@@ -15,7 +15,8 @@ Generic MQTT Component for HomeAssistant
 
 参见 [我的 Home Assistant 配置](https://github.com/Yonsm/.homeassistant) 中 [configuration.yaml](https://github.com/Yonsm/.homeassistant/blob/main/configuration.yaml)
 
-```
+```yaml
+switch:
   - platform: zhimqtt
     name: 书房音箱
     state_topic: NodeMCU2/relay/0
