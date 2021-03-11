@@ -1,0 +1,9 @@
+{
+	"domain": "zhimqtt",
+	"name": "Generic MQTT Component",
+	"documentation": "https://github.com/Yonsm/ZhiMQTT",
+	"version": "1.0.1",
+	"requirements": [],
+	"dependencies": ["mqtt"],
+	"codeowners": ["@Yonsm"]
+}
