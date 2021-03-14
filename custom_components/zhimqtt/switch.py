@@ -31,6 +31,11 @@ class ZhiMqttSwitch(MqttSwitch):
         self._attributes = None
         self._icon = None
 
+    @property
+    def unique_id(self):
+        from homeassistant.util import slugify
+        return self.__class__.__name__.lower() + '.' + slugify(self.name)
+
     def _setup_from_config(self, config):
         """(Re)Setup the entity."""
         super()._setup_from_config(config)
